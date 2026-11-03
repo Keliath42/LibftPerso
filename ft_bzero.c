@@ -6,7 +6,7 @@
 /*   By: kpuythor <kevin.puythorac@learner.42.te    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/02 18:13:22 by kpuythor          #+#    #+#             */
-/*   Updated: 2026/11/02 18:22:34 by kpuythor         ###   ########.fr       */
+/*   Updated: 2026/11/03 18:29:54 by kpuythor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,5 @@
 
 void	ft_bzero(void *s, size_t n)
 {
-	size_t	i;
-
-	i = 0;
-	while (i < n)
-	{
-		(unsigned char *)s[i] = '\0';
-	}
+	ft_memset(s, 0, n);
 }
