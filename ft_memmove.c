@@ -6,7 +6,7 @@
 /*   By: kpuythor <kevin.puythorac@learner.42.te    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/02 18:48:37 by kpuythor          #+#    #+#             */
-/*   Updated: 2026/11/04 10:36:43 by kpuythor         ###   ########.fr       */
+/*   Updated: 2026/11/04 16:19:39 by kpuythor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,10 +21,22 @@ void	*ft_memmove(void *dest, const void *src, size_t count)
 	temp_src = src;
 	if (src > dest)
 		return (ft_memcpy(dest, src, count));
-	while (count != 0)
+	else if (src == dest)
+		return (dest);
+	while (count > 0)
 	{
-		temp_dest[count] = temp_src[count];
 		count--;
+		temp_dest[count] = temp_src[count];
 	}
 	return (dest);
 }
+
+/*#include <stdio.h>
+int	main(void)
+{
+	char str[] = "ABCDEF";
+	printf("%s\n", str);
+	ft_memmove(str, str, 3);
+	printf("%s\n", str);
+	return (0);
+}*/
