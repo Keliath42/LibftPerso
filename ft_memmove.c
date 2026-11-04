@@ -6,7 +6,7 @@
 /*   By: kpuythor <kevin.puythorac@learner.42.te    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/02 18:48:37 by kpuythor          #+#    #+#             */
-/*   Updated: 2026/11/02 19:12:34 by kpuythor         ###   ########.fr       */
+/*   Updated: 2026/11/04 10:36:43 by kpuythor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,16 @@
 
 void	*ft_memmove(void *dest, const void *src, size_t count)
 {
+	unsigned char *temp_dest;
+	const unsigned char *temp_src;
+
+	temp_dest = dest;
+	temp_src = src;
 	if (src > dest)
 		return (ft_memcpy(dest, src, count));
 	while (count != 0)
 	{
-		(unsigned char *)dest[count] = (unsigned char *)src[count];
+		temp_dest[count] = temp_src[count];
 		count--;
 	}
 	return (dest);
