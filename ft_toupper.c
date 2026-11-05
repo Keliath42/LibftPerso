@@ -6,7 +6,7 @@
 /*   By: kpuythor <kevin.puythorac@learner.42.te    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/04 12:05:46 by kpuythor          #+#    #+#             */
-/*   Updated: 2026/11/04 12:08:54 by kpuythor         ###   ########.fr       */
+/*   Updated: 2026/11/05 09:42:28 by kpuythor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,7 @@
 
 int	ft_toupper(int ch)
 {
-	return (ch -= 32);
+	if (ch >= 97 && ch <= 122)
+		return (ch -= 32);
+	return (ch);
 }
