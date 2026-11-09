@@ -6,7 +6,7 @@
 /*   By: kpuythor <kevin.puythorac@learner.42.te    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/02 17:26:54 by kpuythor          #+#    #+#             */
-/*   Updated: 2026/11/06 13:39:38 by kpuythor         ###   ########.fr       */
+/*   Updated: 2026/11/09 11:29:04 by kpuythor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,5 +35,7 @@ void	*ft_memchr(const void* ptr, int ch, size_t count);
 int	ft_memcmp(const void *lhs, const void *rhs, size_t count);
 int	ft_toupper(int ch);
 int	ft_tolower(int ch);
+int	ft_atoi(const char *str);
+void *ft_calloc(size_t count, size_t size);
 
 #endif

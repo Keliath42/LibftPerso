@@ -6,7 +6,7 @@
 /*   By: kpuythor <kevin.puythorac@learner.42.te    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/06 11:49:46 by kpuythor          #+#    #+#             */
-/*   Updated: 2026/11/06 14:00:15 by kpuythor         ###   ########.fr       */
+/*   Updated: 2026/11/09 10:12:50 by kpuythor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 	i = len_dst;
 	if (dstsize <= len_dst)
 		return (dstsize + len_src);
-	while (dst[x] && src[x] && (dstsize - len_dst > 1))
+	while (src[x] && (dstsize - len_dst > 1))
 	{
 		dst[i] = src[x];
 		i++;
@@ -36,13 +36,12 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 	return (len_dst + len_src);
 }
 
-#include <stdio.h>
+/*#include <stdio.h>
 
 int main(void)
 {
 	char buffer[30];
 	ft_memset(buffer, 0, 30);
 	printf("%zu\n", ft_strlcat(buffer, "123", 2));
-	printf("%s\n")
 	return 0;
-}
+}*/
