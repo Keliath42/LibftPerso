@@ -6,19 +6,18 @@
 /*   By: kpuythor <kevin.puythorac@learner.42.te    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/09 11:22:44 by kpuythor          #+#    #+#             */
-/*   Updated: 2026/11/09 12:13:40 by kpuythor         ###   ########.fr       */
+/*   Updated: 2026/11/09 13:19:28 by kpuythor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdint.h>
 
-void *ft_calloc(size_t count, size_t size)
+void	*ft_calloc(size_t count, size_t size)
 {
 	unsigned char	*tmp;
 
-	if (size == 0 || count == 0)
-		tmp = malloc(0);
-	if (SIZE_MAX / count < size && SIZE_MAX / size < count)
+	if (count > 0 && SIZE_MAX / count < size)
 		return (NULL);
 	tmp = malloc(size * count);
 	if (!tmp)

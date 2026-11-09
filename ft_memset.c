@@ -6,7 +6,7 @@
 /*   By: kpuythor <kevin.puythorac@learner.42.te    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/02 17:45:58 by kpuythor          #+#    #+#             */
-/*   Updated: 2026/11/03 18:13:54 by kpuythor         ###   ########.fr       */
+/*   Updated: 2026/11/09 13:36:54 by kpuythor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 void	*ft_memset(void *dest, int ch, size_t count)
 {
-	size_t	i;
-	unsigned char *temp;
+	size_t			i;
+	unsigned char	*temp;
 
 	i = 0;
 	temp = (unsigned char *)dest;

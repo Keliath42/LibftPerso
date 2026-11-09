@@ -6,7 +6,7 @@
 /*   By: kpuythor <kevin.puythorac@learner.42.te    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/02 18:48:37 by kpuythor          #+#    #+#             */
-/*   Updated: 2026/11/04 16:19:39 by kpuythor         ###   ########.fr       */
+/*   Updated: 2026/11/09 13:38:07 by kpuythor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 void	*ft_memmove(void *dest, const void *src, size_t count)
 {
-	unsigned char *temp_dest;
-	const unsigned char *temp_src;
+	unsigned char		*temp_dest;
+	const unsigned char	*temp_src;
 
 	temp_dest = dest;
 	temp_src = src;

@@ -6,7 +6,7 @@
 /*   By: kpuythor <kevin.puythorac@learner.42.te    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/04 13:05:52 by kpuythor          #+#    #+#             */
-/*   Updated: 2026/11/04 14:44:37 by kpuythor         ###   ########.fr       */
+/*   Updated: 2026/11/09 13:40:51 by kpuythor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	ft_memcmp(const void *lhs, const void *rhs, size_t count)
 {
-	size_t	i;
+	size_t				i;
 	const unsigned char	*temp_lhs;
 	const unsigned char	*temp_rhs;
 
@@ -23,7 +23,7 @@ int	ft_memcmp(const void *lhs, const void *rhs, size_t count)
 	temp_rhs = rhs;
 	while (i != count)
 	{
-		if(temp_lhs[i] != temp_rhs[i])
+		if (temp_lhs[i] != temp_rhs[i])
 			return (temp_lhs[i] - temp_rhs[i]);
 		i++;
 	}
