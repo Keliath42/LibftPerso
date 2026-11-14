@@ -103,7 +103,7 @@ This generate the static library libft.a.
 * `make` or `make all` : Compiles the library (with -Wall -Werror -Wextra flags)
 * `make clean` : Removes objects files.
 * `make fclean` : Removes object files and the library.
-* ` make re` : Rebuilds the library from scratch.
+* `make re` : Rebuilds the library from scratch.
 
 **Usage**
 
@@ -129,9 +129,10 @@ Run the executable :
 
 The following resources were used to understand C functions, memory management and the concepts required for this project :
 
-* **42 Libft subject** - The subject of the project containing obviously project requirements, constraints and expected behaviour.
+* **42 Libft subject** - The subject of the project containing the project requirements, constraints and expected behaviour.
 * **C manual pages (man)** - Reference documentations for standard C library functions.
 * **https://devdocs.io/** - A site containing all man references that I found easier to understand than the traditional man.
+* **https://www.ascii-code.com/** - Usefull ASCII table.
 * **Various forums (StackOverflow, OpenClassroom, Reddit...)** - Searching for answers to questions like "What is the difference between memmove and memcpy ?" for exemple or an explanation on an error code.
 * **https://www.stephane-robert.info/docs/developper/autres-outils/build/makefile/** - Very useful and clear tutorial about making Makefiles.
 * **Tripouille's libftTester** - External testing tool used to verify function behavior and identify edge cases.
